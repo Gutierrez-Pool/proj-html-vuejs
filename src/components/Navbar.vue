@@ -71,9 +71,6 @@ nav {
             }
         }
 
-        .btn {
-            // background-color: #1e4286;
-        }
     }
 }
 </style>
