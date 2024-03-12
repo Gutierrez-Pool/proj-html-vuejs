@@ -92,6 +92,7 @@ export default {
 
     .blog-card {
         padding: 24px 39px;
+        background: linear-gradient(to bottom right, #01012f 0%, #17306e 100%);
     
     }
     

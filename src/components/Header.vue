@@ -18,11 +18,17 @@ export default {
 
 
 <template>
+  <div id="bg-principal">
     <Navbar></Navbar>
     <Jumbotron></Jumbotron>
+  </div>
 </template>
 
 
-<style>
+<style lang="scss">
+
+#bg-principal {
+  background: linear-gradient(to top, #01012f 0%, #0b1952 100%);
+}
 
 </style>

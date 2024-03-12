@@ -36,7 +36,7 @@ export default {
 #start-project {
 
     padding: 105px 0 150px;
-    background-color: $bg-primary;
+    background: linear-gradient(to top, #01012f 0%, #0b1952 100%);
     color: white;
 
     .immagini {

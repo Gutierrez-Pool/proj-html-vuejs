@@ -40,7 +40,6 @@ export default {
 
 .jumbo {
     padding: 20px 0px 190px;
-    background-color: $bg-primary;
     color: white;
 
     h1 {

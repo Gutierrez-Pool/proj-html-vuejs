@@ -131,7 +131,7 @@ export default {
     text-align: center;
     padding-bottom: 165px;
 
-    background-color: #081249;
+    background: linear-gradient(to left, #01012f 0%, #0b1952 100%);
     color: white;
 
     .price-card {

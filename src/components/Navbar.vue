@@ -50,7 +50,7 @@ export default {
 
 nav {
     padding: 20px 0;
-    background-color: $bg-primary;
+    // background-color: $bg-primary;
     color: white;
 
     img {

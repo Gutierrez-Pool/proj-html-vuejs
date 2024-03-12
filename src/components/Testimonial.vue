@@ -99,7 +99,7 @@ export default {
     }
 
     .clients {
-        padding-bottom: 115px;
+        padding-bottom: 275px;
 
         img {
             max-width: 145px;
