@@ -102,8 +102,8 @@ export default {
             When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.
         </p>
 
-        <div class="d-flex">
-            <div v-for="(price, index) in pricing" class="col-3">
+        <div class="d-flex justify-content-around">
+            <div v-for="(price, index) in pricing" class="price-card col-3">
                 <h3>{{ price.title }}</h3>
                 <p>{{ price.text }}</p>
                 <div>$</div>
@@ -129,9 +129,15 @@ export default {
 
 #pricing {
     text-align: center;
+    padding-bottom: 165px;
+
     background-color: #081249;
     color: white;
 
+    .price-card {
+        background-color: white;
+        color: black;
+    }
     ul {
         list-style-type: none;
     }

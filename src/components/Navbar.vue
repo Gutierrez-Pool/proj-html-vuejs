@@ -20,7 +20,7 @@ export default {
 <nav>
     <div class="container">
         <div class="d-flex justify-content-between align-items-center">
-            <img src="/public/img/white-logo-2.png" alt="logo">
+            <img src="/img/white-logo-2.png" alt="logo">
 
             <div class="d-flex align-items-center gap-5">
                 

@@ -6,22 +6,22 @@ export default {
         return {
             services: [
                 {
-                    image: '/public/img/Group-247.png',
+                    image: '/img/Group-247.png',
                     title: 'Data Analysis',
                     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
                 },
                 {
-                    image: '/public/img/Group-567.png',
+                    image: '/img/Group-567.png',
                     title: 'SEO Optimization',
                     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
                 },
                 {
-                    image: '/public/img/Group-538.png',
+                    image: '/img/Group-538.png',
                     title: 'Security Data',
                     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
                 },
                 {
-                    image: '/public/img/Group-566.png',
+                    image: '/img/Group-566.png',
                     title: 'Branding Strategy',
                     text: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
                 },
@@ -67,7 +67,7 @@ export default {
     text-align: center;
 
     .title {
-        padding-bottom: 135px;
+        padding-bottom:
     }
 
     .service {

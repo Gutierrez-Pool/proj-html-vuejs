@@ -9,8 +9,8 @@ export default {
     <section id="start-project">
         <div class="container d-flex justify-content-around align-items-center">
             <div class="immagini col-4">
-                <img id="img-front" src="/public/img/men-data.png" alt="">
-                <img id="img-bg" src="/public/img/nemoodar.png" alt="">
+                <img id="img-front" src="/img/men-data.png" alt="">
+                <img id="img-bg" src="/img/nemoodar.png" alt="">
             </div>
     
             <div class="text col-4 d-flex flex-column">

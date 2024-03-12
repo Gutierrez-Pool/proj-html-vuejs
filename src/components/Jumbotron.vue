@@ -27,7 +27,7 @@ export default {
             </div>
         </div>
         <div class="col-7">
-            <img src="/public/img/header.png" alt="">
+            <img src="/img/header.png" alt="">
         </div>
     </div>
 </div>
