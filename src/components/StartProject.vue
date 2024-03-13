@@ -20,9 +20,9 @@ export default {
                     When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface of the impenetrable follage of my trees, and but a few stray gleams steal into the inner sanctuary.
                 </p>
         
-                <div>
-                    <div class="btn btn-danger">Try it Now</div>
-                    <div class="btn btn-primary">Explore More</div>
+                <div class="d-flex gap-4">
+                    <div class="btn red">Try it Now</div>
+                    <div class="btn blue">Explore More</div>
                 </div>
             </div>
         </div>
@@ -68,7 +68,34 @@ export default {
     }
 
     .text {
+        
         gap: 40px;
+
+        p {
+            color: #03a7d3e6;
+        }
+    }
+
+    .btn {
+        color: white;
+        padding: 15px 50px;
+        border-radius: 30px;
+    }
+
+    .btn.red {
+        background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
+    }
+
+    .btn.red:hover {
+        background: linear-gradient(to right, #49A0CC 0%, #263C7E 100%);
+    }
+
+    .btn.blue {
+        background: linear-gradient(to right, #49A0CC 0%, #263C7E 100%);
+    }
+
+    .btn.blue:hover {
+        background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
     }
 }
 

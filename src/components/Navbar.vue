@@ -75,8 +75,14 @@ nav {
 
     .btn {
         color: white;
-        background: linear-gradient(to right, #5e7ae8 0%, #05057c 100%);
+        padding: 15px 25px;
+        border-radius: 30px;
+        background: linear-gradient(to right, #49A0CC 0%, #263C7E 100%);
+    }
 
+    .btn:hover {
+        color: white;
+        background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
     }
 }
 </style>

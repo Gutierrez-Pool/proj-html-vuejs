@@ -7,7 +7,7 @@ export default {
             pricing: [
                 {
                     title: 'Designing',
-                    text: 'Process',
+                    text: 'PROCESS',
                     price: '40',
                     features: [
                         {
@@ -34,7 +34,7 @@ export default {
                 },
                 {
                     title: 'Developing',
-                    text: 'Product',
+                    text: 'PRODUCT',
                     price: '60',
                     features: [
                         {
@@ -61,7 +61,7 @@ export default {
                 },
                 {
                     title: 'Supporting',
-                    text: 'Clients',
+                    text: 'CLIENTS',
                     price: '80',
                     features: [
                         {
@@ -102,13 +102,14 @@ export default {
             When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface.
         </p>
 
-        <div class="d-flex justify-content-around">
-            <div v-for="(price, index) in pricing" class="price-card col-3">
-                <h3>{{ price.title }}</h3>
-                <p>{{ price.text }}</p>
+        <div class="d-flex justify-content-around gap-5">
+            <div v-for="(price, index) in pricing" class="price-card">
+                <span class="bg-prezzo">{{ price.price }}</span>
+                <h3><strong>{{ price.title }}</strong></h3>
+                <p><small>{{ price.text }}</small></p>
                 <div>$</div>
-                {{ price.price }}
-                <p>Per Month</p>
+                <span class="prezzo">{{ price.price }}</span>
+                <p><small>Per Month</small></p>
                 
                 <ul>
                     <li v-for="(feature, index) in price.features">
@@ -117,6 +118,7 @@ export default {
                 </ul>
                 <div class="btn">
                     Order Now
+                    <i class="fa-solid fa-arrow-right-long"></i>
                 </div>
             </div>
         </div>
@@ -131,16 +133,73 @@ export default {
     text-align: center;
     padding-bottom: 165px;
 
-    background: linear-gradient(to left, #01012f 0%, #0b1952 100%);
+    background: linear-gradient(to bottom, #01012f 0%, #01012f 50%, white 50%, white 100%);
     color: white;
 
+    p {
+        padding-bottom: 80px;
+    }
+
     .price-card {
+        position: relative;
+
         background-color: white;
         color: black;
+
+        padding: 55px 80px;
+        border-radius: 20px;
+
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+        .prezzo {
+            font-size: 70px;
+            font-weight: bold;
+        }
+
+        .bg-prezzo {
+            position: absolute;
+            top: -14%;
+            right: -3%;
+
+            font-size: 250px;
+            font-weight: bold;
+
+            color: rgba(128, 128, 128, 0.228);
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        .btn {
+            background: linear-gradient(to bottom, #b6246e 0%, #f9636b 100%);
+            color: white;
+            padding: 10px 25px;
+            border-radius: 30px;
+            font-weight: bold;
+
+            i {
+                padding-left: 55px;
+            }
+        }
     }
-    ul {
-        list-style-type: none;
+
+    .price-card:nth-of-type(2) {
+        background: linear-gradient(to bottom, #b6246e 0%, #f9636b 100%);
+        color: white;
+        box-shadow: none;
+
+        .bg-prezzo {
+            color: rgba(255, 255, 255, 0.161);
+        }
+
+        .btn {
+            background: white;
+            color: #f9636b;
+        }
     }
+
+
 }
 
 </style>

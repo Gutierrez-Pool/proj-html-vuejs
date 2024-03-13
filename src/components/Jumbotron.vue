@@ -60,14 +60,24 @@ export default {
 
     .btn {
         color: white;
+        padding: 15px 50px;
+        border-radius: 30px;
     }
 
     .btn.red {
         background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
     }
 
+    .btn.red:hover {
+        background: linear-gradient(to right, #49A0CC 0%, #263C7E 100%);
+    }
+
     .btn.blue {
-        background: linear-gradient(to right, #5e7ae8 0%, #05057c 100%);
+        background: linear-gradient(to right, #49A0CC 0%, #263C7E 100%);
+    }
+
+    .btn.blue:hover {
+        background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
     }
 }
 
