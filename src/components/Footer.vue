@@ -19,36 +19,36 @@ export default {
             </div>
     
             <div class="top-footer d-flex justify-content-between">
-                <div>
-                    logo
-                    <p>testo</p>
+                <div class="col-3">
+                    <img src="/img/white-logo-2.png" alt="">
+                    <p>When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable </p>
                 </div>
     
-                <div>
-                    <h6>titolo</h6>
+                <div class="col-2">
+                    <h6>Quick Links</h6>
                     <ul>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                        <li>Services</li>
+                        <li>Contact</li>
+                        <li>Blog</li>
                     </ul>
                 </div>
     
-                <div>
-                    <h6>titolo</h6>
+                <div class="col-2">
+                    <h6>Resources</h6>
                     <ul>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
-                        <li>link</li>
+                        <li>Art Design</li>
+                        <li>Computer</li>
+                        <li>IT News</li>
+                        <li>Networking</li>
+                        <li>Web Security</li>
                     </ul>
                 </div>
     
-                <div>
-                    <h6>titolo</h6>
-                    <p>address</p>
-                    <p>phone</p>
-                    <p>email</p>
+                <div class="col-3">
+                    <h6>Contact Us</h6>
+                    <p><strong>Address:</strong> Patricia C. Amedee 4401 Waldeck Street Grapevine Nashville Tx 76051</p>
+                    <p><strong>Phone:</strong> +99 (0) 101 0000 888</p>
+                    <p><strong>Email:</strong> info@yourcomain.com</p>
                 </div>
             </div>
 
@@ -60,10 +60,14 @@ export default {
                 </div>
                 <div class="d-flex">
                     <ul class="d-flex gap-5">
-                        <li>icon</li>
-                        <li>icon</li>
-                        <li>icon</li>
-                        <li>icon</li>
+                        <li><i class="fa-brands fa-instagram"></i></li>
+                        <li><i class="fa-brands fa-linkedin"></i></li>
+                        <li>
+                            <i class="fa-brands fa-facebook"></i>
+                        </li>
+                        <li>
+                            <i class="fa-brands fa-twitter"></i>
+                        </li>
                     </ul>
                     icon
                 </div>
@@ -77,6 +81,8 @@ export default {
 <style lang="scss">
 
 footer {
+    color: white;
+        // test
     padding-top: 220px;
 
     position: relative;
@@ -100,6 +106,14 @@ footer {
 
     ul {
         list-style-type: none;
+    }
+
+    .top-footer {
+        padding-bottom: 110px;
+
+        h6 {
+            font-weight: bold;
+        }
     }
 
     .bottom-footer {

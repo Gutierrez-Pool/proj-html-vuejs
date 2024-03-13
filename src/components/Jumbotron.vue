@@ -18,10 +18,10 @@ export default {
                 </small>
             </p>
             <div class="d-flex gap-4">
-                <div class="btn btn-primary">
+                <div class="btn red">
                     Try it now
                 </div>
-                <div class="btn btn-primary">
+                <div class="btn blue">
                     Explore More
                 </div>
             </div>
@@ -56,6 +56,18 @@ export default {
     
     img {
         width: 100%;
+    }
+
+    .btn {
+        color: white;
+    }
+
+    .btn.red {
+        background: linear-gradient(to right, #b6246e 0%, #f9636b 100%);
+    }
+
+    .btn.blue {
+        background: linear-gradient(to right, #5e7ae8 0%, #05057c 100%);
     }
 }
 

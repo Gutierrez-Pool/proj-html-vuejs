@@ -67,7 +67,7 @@ export default {
     text-align: center;
 
     .title {
-        padding-bottom:
+        padding-bottom: 140px;
     }
 
     .service {

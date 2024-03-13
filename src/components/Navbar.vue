@@ -33,7 +33,7 @@ export default {
                     </li>
                 </ul>
         
-                <div class="btn btn-primary">
+                <div class="btn">
                     Sign In
                 </div>
             </div>
@@ -70,6 +70,12 @@ nav {
                 font-weight: bold;
             }
         }
+
+    }
+
+    .btn {
+        color: white;
+        background: linear-gradient(to right, #5e7ae8 0%, #05057c 100%);
 
     }
 }

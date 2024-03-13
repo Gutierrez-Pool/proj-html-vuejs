@@ -36,7 +36,7 @@ export default {
 
                     <img src="/img/headway-537308-unsplash-1380x703.jpg" class="card-img" alt="...">
                     
-                    <div class="blog-card cardover d-flex ">
+                    <div class="blog-card active cardover d-flex ">
                         <div class="">
                             <p class="card-text"><small>April 21, 2019 - by Paul</small></p>
                             <h5 class="card-title">Amazon gets CCI nod to acquire 49% stake in</h5>
@@ -92,7 +92,13 @@ export default {
 
     .blog-card {
         padding: 24px 39px;
+        color: white;
         background: linear-gradient(to bottom right, #01012f 0%, #17306e 100%);
+    
+    }
+
+    .blog-card.active {
+        background: none;
     
     }
     
