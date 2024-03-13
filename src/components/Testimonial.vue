@@ -47,6 +47,25 @@ export default {
             ]
         }
     },
+
+    methods: {
+        voteStars(currentVote) {
+            const fillStars = currentVote;
+
+            const starArray = [];
+
+            for (let i = 0; i < 5; i++) {
+                let emptyStars =  'fas fa-star';
+
+                if (i < fillStars) {
+                    emptyStars += ' filled';
+                }
+                starArray.push(emptyStars);
+            }
+            console.log(fillStars);
+            return starArray;
+        },
+    },
 }
 </script>
 
@@ -64,10 +83,13 @@ export default {
 
             <div class="review d-flex justify-content-around text-center">
                 <div v-for="(testimonial, index) in testimonials" class="col-3">
-                    <img :src="testimonial.img" alt="">
-                    <div>{{ testimonial.text }}</div>
+                    <img :src="testimonial.img" alt=""> <br>
+                    <span v-for="emptyStars in voteStars(testimonial.vote)">
+                        <i :class="emptyStars"></i>
+                    </span>
+                    <p>{{ testimonial.text }}</p>
                     <div><strong>{{ testimonial.name }}</strong></div>
-                    <div>{{ testimonial.role }}</div>
+                    <div><small>{{ testimonial.role }}</small></div>
                 </div>
             </div>
 
@@ -85,7 +107,11 @@ export default {
 
 #testimonial {
 
-    p {
+    h6 {
+        color: #f9636b;
+    }
+
+    .text-center {
         padding-bottom: 125px;
     }
 
@@ -93,8 +119,22 @@ export default {
 
         padding-bottom: 190px;
         
+        .fas.fa-star {
+            margin-bottom: 45px;
+            color: gray;
+        }
+
+        .fas.fa-star.filled {
+            color: #b6246e;
+        }
+
         img {
             width: 110px;
+
+            margin-bottom: 50px;
+
+            border: 5px solid #b6246e;
+            border-radius: 50%;
         }
     }
 

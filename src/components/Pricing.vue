@@ -111,7 +111,7 @@ export default {
                 <span class="prezzo">{{ price.price }}</span>
                 <p><small>Per Month</small></p>
                 
-                <ul>
+                <ul class="text-center">
                     <li v-for="(feature, index) in price.features">
                         <strong>{{ feature.title }}</strong> {{ feature.text }}
                     </li>
@@ -136,8 +136,12 @@ export default {
     background: linear-gradient(to bottom, #01012f 0%, #01012f 50%, white 50%, white 100%);
     color: white;
 
+    h6 {
+        color: #f9636b;
+    }
+
     p {
-        padding-bottom: 80px;
+        padding-bottom: 65px;
     }
 
     .price-card {
@@ -168,6 +172,7 @@ export default {
         }
 
         ul {
+            padding: 0;
             list-style-type: none;
         }
 
